@@ -1,0 +1,58 @@
+\noindent \underline{\hspace{6.5in}}
+{\bf Axler-v2 3.D.9 --}
+Suppose $V$ is a vector space and $S,~T~\in~\mathcal{L}(V)$.  
+Prove that if $ST$ is injective then $S$ is injective.
+Prove that if $ST$ is surjective then $T$ is surjective.
+\vspace*{-.3cm}
+
+\noindent \underline{\hspace{6.5in}}
+\vspace*{.3cm}
+
+\noindent
+
+\noindent \framebox{$\Rightarrow$}\\
+This is the ``easy'' way.\\
+Assume $V = S \oplus U$ and $V = S \oplus W$.\\
+Since $V = S \oplus U$, we have that $\textmd{dim}(V) =\textmd{dim}(S) +\textmd{dim}(U).$\\
+Since $V = S \oplus W$, we have that $\textmd{dim}(V) =\textmd{dim}(S) +\textmd{dim}(W).$\\
+We therefore see that $\textmd{dim}(U) = \textmd{dim}(W).$
+
+\noindent \framebox{$\Leftarrow$}\\
+Assume $\textmd{dim}(U) = \textmd{dim}(W).$\\
+{\color{blue} We want to prove that that there exists $S$, a subspace of $V$, such that $V = S \oplus U$ and $V = S \oplus W$.}\\
+\framebox{
+\begin{minipage}{\textwidth}
+To bring some intuition let us think 
+$$
+V=\mathbb{R}^3,\quad
+U= \textmd{Span}(\left(\begin{array}{c}1\\0\\0\end{array}\right),\left(\begin{array}{c}0\\1\\0\end{array}\right)), \quad
+W= \textmd{Span}(\left(\begin{array}{c}1\\0\\0\end{array}\right),\left(\begin{array}{c}0\\0\\1\end{array}\right)).
+$$
+After some thought,
+it seems that a good $S$ would be something like 
+$$\phantom{ S = \textmd{Span}(\left(\begin{array}{c}0\\1\\1\end{array}\right)).}$$
+The goal is to recreate something similar in the general case. Hopefully the fact that 
+$\textmd{dim}(U) = \textmd{dim}(W)$ will be needed somewhere.
+\end{minipage}
+}
+
+\framebox{
+\begin{minipage}{\textwidth}
+To bring some intuition let us think 
+$$
+V=\mathbb{R}^3,\quad
+U= \textmd{Span}(\left(\begin{array}{c}1\\0\\0\end{array}\right)), \quad
+W= \textmd{Span}(\left(\begin{array}{c}0\\1\\0\end{array}\right)).
+$$
+After some thought,
+it seems that a good $S$ would be something like 
+$$\phantom{ S = \textmd{Span}(\left(\begin{array}{c}0\\1\\1\end{array}\right)).}$$
+The goal is to recreate something similar in the general case. Hopefully the fact that 
+$\textmd{dim}(U) = \textmd{dim}(W)$ will be needed somewhere.
+\end{minipage}
+}
+
+
+
+
+
